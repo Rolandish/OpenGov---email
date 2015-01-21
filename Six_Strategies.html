@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+  
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <style type='text/css'>
+      /*<![CDATA[*/
+        /**************************************************************************************
+        * CSS to Keep External *
+        **************************************************************************************/
+        @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+        @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+        
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+        table td { border-collapse: collapse; -webkit-border-horizontal-spacing: 0 !important;
+        -webkit-border-vertical-spacing: 0 !important; }
+        body { width: 100% !important; -webkit-text-size-adjust: 100% !important; -ms-text-size-adjust: 100% !important; margin: 0 !important; padding: 0 !important; }
+        img { outline: none !important; text-decoration: none !important; -ms-interpolation-mode: bicubic !important; }
+        body { color: #747474 !important; font-family: 'Source Sans Pro', arial, helvetica, sans-serif !important; }
+        p {font-family: 'Source Sans Pro', arial, helvetica, sans-serif; color: #747474 !important; font-size: 11pt !important; line-height: 120% !important; font-weight: normal !important; 
+        }
+        ul li {font-family: 'Source Sans Pro', arial, helvetica, sans-serif; color: #747474 !important; font-size: 11pt !important; line-height: 120% !important; font-weight: normal !important; 
+        }
+        h1 a:active { color: #4A82A0 !important; }
+        h2 a:active { color: #4A82A0 !important; }
+        h3 a:active { color: #4A82A0 !important; }
+        h4 a:active { color: #4A82A0 !important; }
+        h5 a:active { color: #4A82A0 !important; }
+        h6 a:active { color: #4A82A0 !important; }
+        h1 a:visited { color: #4A82A0 !important; }
+        h2 a:visited { color: #4A82A0 !important; }
+        h3 a:visited { color: #4A82A0 !important; }
+        h4 a:visited { color: #4A82A0 !important; }
+        h5 a:visited { color: #4A82A0 !important; }
+        h6 a:visited { color: #4A82A0 !important; }
+        p a:link { color: #4A82A0 !important; text-decoration: underline !important;}
+        a:visited { color: #4A82A0 !important; text-decoration: underline !important;}
+        a:hover { color: #4A82A0 !important; text-decoration: underline !important;}
+        a:active { color: #4A82A0 !important; text-decoration: underline !important;}
+        a.text:link { color: #003B65 !important; text-decoration: underline !important;}
+        a.text:active { color: #003B65 !important; text-decoration: underline !important;}
+        a.text:visited { color: #003B65 !important; text-decoration: underline !important;}
+        a.text:hover { color: #005592 !important; text-decoration: underline !important; }
+        /* Survey Button Hover Colors */
+        table.button:hover td {background: #74C043 !important; cursor: pointer !important;}
+        table.button:visited td {background: #74C043 !important; cursor: pointer !important;}
+        table.button:active td {background: #74C043 !important; cursor: pointer !important;}
+        table.button td a:hover {color: #ffffff !important;}
+        table.button td a:active {color: #ffffff !important;}
+        table.button td a:visited {color: #ffffff !important;}    
+        .footer a:hover { text-decoration: none !important; }
+        .footer-small a:hover { text-decoration: underline !important; }
+        @media only screen and (max-device-width: 578px), only screen and (max-width: 578px) { 
+          table[id="body"] { width: 100% !important; }
+          table[id="body"] p.mobile-text { font-size: 14px !important;}
+          table[id="body"] .l-outie { padding: 0px !important; }
+          table[id="body"] .l-body-point, table[id="body"] .l-footer, table[id="body"] .l-wrap, table[id="body"] .l-full-bleed, table[id="body"] .media-obj, table[id="body"] .media-content, table[id="body"] .btn, table[id="body"] .btn td { width: 100% !important; }
+          table[id="body"] .l-body-point { border-right: none !important; border-left: none !important; }
+          table[id="body"] .l-full-bleed img { width: 100% !important; height: auto !important; }
+          table[id="body"] .l-pad > tbody > tr > td { padding: 16px !important; }
+          table[id="body"] .l-split { width: 100% !important; }
+          table[id="body"] .l-split + .l-split { margin-top: 32px !important; }
+          table[id="body"] .ill-notebook { width: 100% !important; height: 96px !important; }
+          table[id="body"] .footer { padding-right: 16px !important; padding-left: 16px !important; }
+          table[id="body"] .btn span { display: block !important; }
+          table[id="body"] a[href^="tel"], table[id="body"] a[href^="sms"] { text-decoration: none; color: #747474; pointer-events: none; cursor: default; }
+          .mobile-link table[id="body"] a[href^="tel"], .mobile-link table[id="body"] a[href^="sms"] { text-decoration: default; color: #ffffff !important; pointer-events: auto; cursor: default; }
+          table[id="body"] .icon { padding: 0 !important; background-size: 56px 56px !important; }
+          table[id="body"] .icon img { width: 56px !important; height: 56px !important; }
+          table[id="body"] .media-content { padding: 0 !important; }
+          table[id="body"] .media-content-var { padding: 0 !important; } }
+        /* More Specific Targeting */
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { table[id="body"] a[href^="tel"], table[id="body"] a[href^="sms"] { text-decoration: none; color: #747474; /* or whatever your want */ pointer-events: none; cursor: default; }
+          .mobile-link table[id="body"] a[href^="tel"], .mobile-link table[id="body"] a[href^="sms"] { text-decoration: default; color: #747474 !important; pointer-events: auto; cursor: default; } }
+        @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { 
+          /*table[id="body"] .l-banner img { display: none !important; }*/
+          /*table[id="body"] .l-banner { background-image: url("http://hrmarketer.com/users/clients/talentculture/layouts/SixStrategies/images/TalentCultureLogo.png") !important; background-size: 43px 27px !important; }*/
+          /*table[id="body"] .l-banner img { display: none !important; }*/
+          table[id="body"] [id="logo"] { background: transparent url("http://hrmarketer.com/users/clients/talentculture/layouts/SixStrategies/images/TalentCultureLogo.png") no-repeat center top !important; 
+          background-size: 270px 60px !important; background-position-x: 0px !important; background-position-y: 0px !important; }
+          table[id="body"] [id="logo"] a { display: block !important; width: 279px !important; height: 60px !important;}
+          table[id="body"] .icon { background-size: 82px 68px; width: 82px; height: 68px; }
+          table[id="body"] .icon img { display: none !important; }
+          /*table[id="body"] .icn-data { background-image: url("http://hrmarketer.com/users/clients/employeescreeniq/trends_survey_2/images/data.png") !important; background-position: left top !important; background-repeat: no-repeat !important; }
+          table[id="body"] .icn-idcard { background-image: url("http://hrmarketer.com/users/clients/employeescreeniq/trends_survey_2/images/idcard.png") !important; background-position: left top !important; background-repeat: no-repeat !important;}
+          table[id="body"] .icn-gift { background-image: url("http://hrmarketer.com/users/clients/employeescreeniq/trends_survey_2/images/giftcard.png") !important; background-position: left top !important; background-repeat: no-repeat !important; }
+          table[id="body"] .arrow { background-image: url("http://hrmarketer.com/users/clients/employeescreeniq/trends_survey_2/images/arrow.png") !important; background-position: right top; !important; background-repeat: no-repeat !important; background-size: 95px 95px; width: 95px; height: 95px;} */}
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-device-width: 578px), only screen and (min-resolution: 144dpi) and (max-device-width: 578px), only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 578px), only screen and (min-resolution: 144dpi) and (max-width: 578px) { 
+          table[id="body"] .icon { display: block; width: 82px !important; height: 68px !important; background-size: 82px 68px !important; }}
+      /*]]>*/
+    </style>
+  </head>
+  
+  <body style="width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #767676; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; margin: 0; padding: 0; background-color: #4C535A;"
+  bgcolor="#4C535A">
+    <!-- Begin Outer table wrap -->
+    <table align="center" id="body" style="width: 100% !important; line-height: 100% !important; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding: 0; background-color: #4C535A;"
+      bgcolor="#4C535A" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="l-outie" style="width: 100%; -premailer-width: 100%; border-collapse: collapse; padding-top: 32px; padding-right: 0; padding-bottom: 64px; padding-left: 0;"
+          width="100%">
+        
+          <!-- Begin Inner Content table wrap -->
+          <table align="center" class="l-body-point" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: inherit; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto; border-top-color: #000000; border-right-color: #000000; border-bottom-color: #000000; border-left-color: #000000; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; background-color: #F9F9F9;"
+          bgcolor="#F9F9F9" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td class="l-wrap" width="576">
+
+                  
+                  <!-- Padding Table -->
+                  <table class="l-banner" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 100%; width: 100%; background-color: #F9F9F9 !important;" bgcolor="#F9F9F9" width="100%" cellpadding="30" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td align='left' valign="top" >
+
+                          <!-- Header Begins -->
+                          <table class="l-banner" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 100%; width: 100%; background-color: #F9F9F9 !important;"
+                            bgcolor="#F9F9F9" width="100%" cellpadding="0" cellspacing="0">
+                            <tbody>
+                              <tr>
+                                <td>
+                              
+                                  <!-- Begin #branding -->
+                                  <table align="left" id="branding" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                      <tr>
+                                        <td id="logo" style="text-align: left; border-collapse: collapse;" valign="top" align="left">
+                                          <a href="http://www.talentculture.com/" title="TalentCulture" style="color: #6DB33F; text-decoration: none;">
+                                            <img alt="TalentCulture" border="0" class="image-fix" height="60" width="270" src="http://hrmarketer.com/users/clients/talentculture/layouts/SixStrategies/images/TalentCultureLogo.png"
+                                             style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block; color: white; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; "
+                                              />
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <!-- End #branding -->
+                                  
+                                  </td>
+                                  <td align='left' valign="top" rowspan="2" style="padding-left: 30px; padding-bottom: 30px;">
+                            
+                                    <!-- Begin Call2Acton -->
+                                    <table align="left" class="" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 230px; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto; border-top-color: #E3E3E3; border-right-color: #E3E3E3; border-bottom-color: #E3E3E3; border-left-color: #E3E3E3; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; background-color: #ffffff;"
+                                    bgcolor="#ffffff" width="230" cellpadding="20" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td style="text-align: left; border-collapse: collapse;" align="left">
+                                          <p class="mobile-text" style="color: #747474; font-family: 'Source Sans Pro', arial, helvetica, sans-serif; margin: 0px !important;">
+                                    
+                                          This complimentary webinar will be held on:<br /><br/</p>
+                                    
+                                    
+                                          <p class="mobile-text" style="color: #747474; font-family: 'Source Sans Pro', arial, helvetica, sans-serif; margin: 0px;">
+                                          <img height="110" width="50" align="left" src="http://hrmarketer.com/users/clients/talentculture/layouts/SixStrategies/images/DateForBox.png" alt="Date"
+                                          style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; padding: 0px;"
+                                          />
+                                          <span style="color: #66A0AE !important;">Tuesday, <br />
+                                          February 17, 2015</span> <br />
+                                          <span style="font-size: 13px !important;">11:00 a.m. &ndash; Noon PST<br />
+                                          2:00 p.m. &ndash; 3:00 p.m. EST.</span>
+                                          </p>
+                                          <br Clear="all" />
+                                          <img height="30" width="70" align="left" src="http://hrmarketer.com/users/clients/talentculture/layouts/SixStrategies/images/PanLogoSmall.png" alt="Date"
+                                          style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; padding: 0px;"
+                                          />
+                                          
+                                    
+                                    
+                                          </td>
+                                        </tr>
+                                  
+                                      </tbody>
+                                    </table>
+                                    <!-- End Call2Acton -->
+                              
+                                    <br Clear="all" />
+                                    <br />                  
+                                    <!-- Begin Button -->
+                                    <table class="button" style="width: 100%; text-align: left; overflow: hidden; vertical-align: top; border-collapse: collapse; border-spacing: 0; float: left;background-color: #F9F9F9 !important;" bgcolor="#F9F9F9">
+                                      <tbody>
+                                        <tr style="text-align: left; vertical-align: top;" align="left">
+                                          <td valign="middle"  onclick="location.href='https://events-na11.adobeconnect.com/content/connect/c1/1122782988/en/events/event/shared/default_template/event_landing.html?sco-id=1275861383'" align="center" valign="top" bgcolor="#6DB33F" style="margin: 0px; !important; border-radius: 0px; border-collapse: collapse !important;">
+                                          <br/ >
+                                          <a style="vertical-align: middle; color: #ffffff; line-height: 100%; text-align: center; font-family: 'Droid Sans', arial, helvetica, sans-serif; font-size: 24px; font-weight: normal !important; text-decoration: none !important;" href="https://events-na11.adobeconnect.com/content/connect/c1/1122782988/en/events/event/shared/    default_template/event_landing.html?sco-id=1275861383" target="_blank">Register now!
+                                          </a>
+                                          <br/ >
+                                          <br/ > 
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <!-- End Button -->
+                                                      
+                                  </td>
+                                </tr>
+                          
+                                <tr>
+                                  <td align='left' valign="top" rowspan="2" style="padding: 0px;">
+                                  <table align="left" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #F9F9F9 !important;" bgcolor="#F9F9F9" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                      <tr>
+                                        <td style="text-align: left; border-collapse: collapse; padding-top: 10px;" valign="top" align="left">
+                                        <br />
+                                          <h1 style="text-align:left; font-weight: normal; font-family: 'Droid Sans', arial, helvetica, sans-serif; color: #4A82A0; font-size: 21px; line-height: 110%; margin-top: 0; margin-right: 0; margin-bottom: 12px; margin-left: 0;"><strong>Webinar:</strong> 6 Strategies To 
+                                            Improve Your Quality Of Hire</h1>
+                                    
+                                          <img height="120" width="120" src="http://hrmarketer.com/users/clients/talentculture/layouts/SixStrategies/images/MeghenBrio.png" alt="Meghen Brio"
+                                          align="left" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; margin: 0px 10px 0px 0px;"
+                                          />
+                                    
+                                          <p class="mobile-text" style="color: #747474; font-family: 'Source Sans Pro', arial, helvetica, sans-serif; margin: 0px;">The World’s most successful 
+                                          organizations don’t rely on 
+                                          intuition and gut instincts to 
+                                          make their hiring decisions. They use data and analytics to drive 
+                                          results-oriented decision-making.<br /><br /></p>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            
+                                  </td>
+                                </tr>
+                          
+                          
+                              </tbody>
+                            </table>
+                            <!-- End Header -->
+                            <!-- Begin Content -->
+                          <!-- .ll-body-point -->
+                          <table class="ll-body-point" id="main" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 100%; width: 100%; background-color: #F9F9F9 !important;"
+                            bgcolor="#F9F9F9" width="100%" cellpadding="0" cellspacing="0">
+                            <tbody>
+                              <tr>
+                                <td>
+                                    <!-- .l-pad -->
+                                    <table class="l-pad" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; max-width: 100%; width: 100%; background-color: #F9F9F9 !important;" bgcolor="#F9F9F9" width="100%" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                          <td class="box box-mid" style="padding-bottom: 18px; background-color: #F9F9F9;"
+                                          bgcolor="#F9F9F9">
+                                      
+                                           <!-- .media -->
+                                            <table class="media" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; background-color: #F9F9F9 !important;" bgcolor="#F9F9F9" width="100%" cellpadding="0" cellspacing="0">
+                                              <tbody>
+                                                <tr>
+                                            
+                                                  <td class="media" style="padding-bottom: 34px; width: 500px; vertical-align: top;       border-collapse: collapse;"
+                                                  valign="top" width="500">
+                                                    <p class="mobile-text" style="color: #747474; font-family: 'Source Sans Pro', arial, helvetica, sans-serif; margin: 0px;">In this highly informative webinar sponsored by <a href="http://www.panpowered.com/" target="_blank" style="color: #4A82A0 !important; font-style: italic;">pan,</a> a leading provider of talent measurement solutions, Meghan M. Biro shares the company’s latest hiring research and offers six practical strategies for improving your company’s hiring practices through the use of data.<br /><br /></p>
+                                              
+                                                      <p class="mobile-text" style="color: #747474; font-family: 'Source Sans Pro', arial, helvetica, sans-serif; margin: 0px;">Founder and CEO of TalentCulture and a globally recognized talent management
+                                                        and HR tech strategist, Biro will use pan’s research to show you how to:</p>
+                                                
+                                                      <ul class="mobile-text" style="color: #747474; font-family: 'Source Sans Pro', arial, helvetica, sans-serif;">
+                                                        <li type="square">Analyze “the four quadrants of success” to ensure that   you bring only superstar employees into your organization.</li>
+                                                        <li type="square">Measure the “smarts” of your candidates’ and new hires, and assess their potential fit 	with your company’s culture.</li>
+                                                        <li type="square">Predict the behavior and leadership potential of your new hires.</li>
+                                                        <li type="square">Conduct assessments by job level.</li>                                   
+                                                      </ul>
+                                                
+                                                      <p class="mobile-text" style="color: #747474; font-family: 'Source Sans Pro', arial, helvetica, sans-serif; margin: 0px;">
+                                                      <img height="50" width="50" align="left"  src="http://hrmarketer.com/users/clients/talentculture/layouts/SixStrategies/images/Date.png" alt="Date"
+                                                      style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; padding:0px;"
+                                                      />
+                                                      This complimentary webinar will be held on <br />
+                                                      <span class="" style="color: #4A82A0!important;">Tuesday, February 17, 2015.</span> 11:00 a.m. &ndash; Noon PST / 2:00 p.m. &ndash; 3:00 p.m. EST.<br /><br /><br Clear="all" /></p>
+                                                
+                                                      <!-- Begin Button -->
+                                                      <table class="button" width="230" style="width: 230px; text-align: left; overflow: hidden; vertical-align: top; border-collapse: collapse; border-spacing: 0; float: left; background-color: #F9F9F9 !important;" bgcolor="#F9F9F9">
+                                                        <tbody>
+                                                          <tr style="text-align: left; vertical-align: top;" align="left">
+                                                            <td valign="middle"  onclick="location.href='https://events-na11.adobeconnect.com/content/connect/c1/1122782988/en/events/event/shared/default_template/event_landing.html?sco-id=1275861383'" align="center" valign="top" bgcolor="#6DB33F" style="margin: 0px; !important; border-radius: 0px; border-collapse: collapse !important;">
+                                                            <br/ >
+                                                            <a style="vertical-align: middle; color: #ffffff; line-height: 100%; text-align: center; font-family: 'Droid Sans', arial, helvetica, sans-serif; font-size: 24px; font-weight: normal !important; text-decoration: none !important;" href="https://events-na11.adobeconnect.com/content/connect/c1/1122782988/en/events/event/shared/default_template/event_landing.html?sco-id=1275861383" target="_blank">Register now!
+                                                            </a>
+                                                            <br/ >
+                                                            <br/ > 
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                      <!-- End Button -->
+                                                
+                                                  </td>
+                                                </tr>
+                                          
+                                                <!-- About Speakers -->
+                                                <tr>
+                                                  <td class="media" style="padding-bottom: 34px; width: 500px; vertical-align: top; border-collapse: collapse;"
+                                                  valign="top" width="500">
+                                                  <hr style="background: #D2D2D2; border: currentColor; height: 1px; color: #D2D2D2;" />
+                                                  <h1 style="padding-top: 34px; text-align:left; font-weight: normal; font-family: 'Droid Sans', arial, helvetica, sans-serif; color: #4A82A0; font-size: 23px; line-height: 110%; margin-top: 0; margin-right: 0; margin-bottom: 12px; margin-left: 0;">About the Speaker </h1>
+                                                  <p class="mobile-text" style="color: #747474; font-family: 'Source Sans Pro', arial, helvetica, sans-serif; margin: 0px;">                                        <span class="" style="color: #4A82A0!important;">Meghan M. Biro</span> is a globally recognized Talent Management and HR Tech strategist, 
+                                                    digital catalyst, author and speaker. As founder and CEO of TalentCulture, she has worked with hundreds of companies, from early-stage ventures to global brands like Microsoft, IBM and Google, helping them recruit and empower stellar talent. She began her 
+                                                    recruiting career working on a research team at Yale University and then moved into 
+                                                    software technology markets. Meghan has been a guest on numerous radio shows and online forums, and has been a featured speaker at global conferences. She is the 
+                                                    co-author of The Character-Based Leader: Instigating a Revolution of Leadership One 
+                                                    Person at a Time, and is a regular contributor at Forbes, Huffington Post and Entrepreneur. Meghan regularly serves on advisory boards for leading HR and technology brands.</p>
+                                              
+                                                  </td>
+                                                </tr>
+                                          
+                                                <!-- About Pan -->
+                                                <tr>
+                                                  <td class="media" style="padding-bottom: 0px; width: 500px; vertical-align: top; border-collapse: collapse;"
+                                                    valign="top" width="500">
+                                                    <hr style="background: #D2D2D2; border: currentColor; height: 1px; color: #D2D2D2; " />
+                                                    <h1 style="padding-top: 34px; text-align:left; font-weight: normal; font-family: 'Droid Sans', arial, helvetica, sans-serif; color: #4A82A0; font-size: 23px; line-height: 110%; margin-top: 0; margin-right: 0; margin-bottom: 12px; margin-left: 0;">About pan
+                                                    </h1>
+                                                    <p class="mobile-text" style="color: #747474; font-family: 'Source Sans Pro', arial, helvetica, sans-serif; margin: 0px;">
+                                                    <img height="75" width="115" align="left"  src="http://hrmarketer.com/users/clients/talentculture/layouts/SixStrategies/images/PanLogoLarge.png" alt="Date"
+                                                      style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; padding: 0px;"
+                                                      />
+                                                    <a href="http://www.panpowered.com/" target="_blank" style="color: #4A82A0 !important; font-style: italic;">Pan</a> is the leading provider of talent measurement solutions helping 
+                                                      organizations of all sizes hire, develop and retain the right talent. Their suite of industry-leading technologies and assessment tools offers 
+                                                      clients a one-stop shop assessment experience.</p>                              
+                                                  </td>
+                                                </tr>
+                                            </tbody>
+                                          </table>
+                                          <!-- .media -->                                  
+                                        
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <!-- .l-pad -->
+                                  
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!-- .ll-body-point -->
+                          <!-- End Content -->
+                  
+                  
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- Padding Table -->
+                  
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- End Inner Content table wrap  -->
+          
+        </td>
+      </tr>
+    </table>
+    <!-- Ende Outer table wrap -->
+    
+  </body>
+
+</html>
